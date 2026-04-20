@@ -48,4 +48,84 @@
 //   console.log("Barcha fayllar yaratildi!")
 // })
 
+// 1. Local modul ishlatish
+// let qoshish = math.add(15, 5);
+// let ayirish = math.subtract(15, 5);
+// math.show(qoshish);
+// math.show(ayirish);
 
+// // 2. fs moduli bilan ishlash
+// fs.writeFileSync("matn.txt", "Salom, dunyo!");
+// let text = fs.readFileSync("matn.txt", "utf8");
+// console.log(text);
+
+// // 3. Buffer bilan ishlash
+// let arr = [];
+// for (let i = 0; i < 10; i++) {
+//   arr.push(Math.floor(Math.random() * 100));
+// }
+// let buffer = Buffer.from(arr.join(" "));
+// fs.writeFileSync("sonlar.txt", buffer);
+// let data = fs.readFileSync("sonlar.txt");
+// console.log(data.toString());
+
+// PROJECT STRUCTURE
+// const fs = require("fs");
+
+// fs.mkdir("__int_tests__", (err) => {
+//   if (err) return console.log(err);
+
+//   fs.mkdir("__int_tests__/__mocks__", (err) => {
+//     if (err) return console.log(err);
+
+//     fs.mkdir("__int_tests__/__tests__", (err) => {
+//       if (err) return console.log(err);
+
+//       fs.mkdir("coverage", (err) => {
+//         if (err) return console.log(err);
+
+//         fs.mkdir("dist", (err) => {
+//           if (err) return console.log(err);
+
+//           fs.mkdir("docs", (err) => {
+//             if (err) return console.log(err);
+
+//             fs.mkdir("docs/api", (err) => {
+//               if (err) return console.log(err);
+
+//               fs.mkdir("public", (err) => {
+//                 if (err) return console.log(err);
+
+//                 fs.mkdir("scripts", (err) => {
+//                   if (err) return console.log(err);
+
+//                   fs.mkdir("scripts/deployment", (err) => {
+//                     if (err) return console.log(err);
+
+//                     fs.mkdir("src", (err) => {
+//                       if (err) return console.log(err);
+
+//                       fs.writeFile("src/.gitignore", "", (err) => {
+//                         if (err) return console.log(err);
+
+//                         fs.writeFile("src/index.js", "", (err) => {
+//                           if (err) return console.log(err);
+
+//                           fs.writeFile("package.json", "", (err) => {
+//                             if (err) return console.log(err);
+
+//                             console.log("Barcha papka va fayllar yaratildi");
+//                           });
+//                         });
+//                       });
+//                     });
+//                   });
+//                 });
+//               });
+//             });
+//           });
+//         });
+//       });
+//     });
+//   });
+// });
