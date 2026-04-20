@@ -49,15 +49,3 @@
 // })
 
 
-
-// 1. Local modul ishlatish
-// let qoshish = math.add(15, 5);
-// let ayirish = math.subtract(15, 5);
-// math.show(qoshish);
-// math.show(ayirish);
-
-// // 2. fs moduli bilan ishlash
-// fs.writeFileSync("matn.txt", "Salom, dunyo!");
-// let text = fs.readFileSync("matn.txt", "utf8");
-// console.log(text);
-
